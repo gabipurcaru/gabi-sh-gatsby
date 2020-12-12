@@ -25,7 +25,7 @@ function IndexPage() {
 
 function Projects() {
   return (
-    <section className="text-gray-700 body-font">
+    <section className="text-gray-700 body-font -mt-16">
       <div className="container px-5 py-2 mx-auto">
         <div className="flex flex-wrap my-4 -mx-8">
           <div className="p-4 lg:w-1/3">

@@ -2,10 +2,15 @@ import React from "react";
 
 function Header() {
   return (
-    <header className="text-gray-700 body-font bg-green-200">
+    <header className="text-gray-700 body-font bg-green-400">
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
         <a className="flex title-font font-medium items-center text-gray-800 mb-4 md:mb-0" href="https://gabi.purcaru.com/">
-          <span className="ml-3 text-2xl">Gabi Purcaru</span>
+          <span className="ml-3 text-2xl">
+            <svg className="w-10 h-10 inline mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <span className="inline-block align-middle">Gabi Purcaru</span>
+          </span>
         </a>
         <span className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700	flex flex-wrap items-center justify-center text-2xl text-gray-700">
           Software Engineer
