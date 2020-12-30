@@ -13,8 +13,18 @@ var randomColor = function () {
     );
 };
 
+const hexagonPoints = (cx, cy, radius) => {
+    const angles = [0, Math.PI / 3, 2 * Math.PI / 3, 3 * Math.PI / 3, 4 * Math.PI / 3, 5 * Math.PI / 3].map(angle => angle + Math.PI / 6);
+    return angles.map(angle => {
+        const x = cx - radius * Math.sin(angle);
+        const y = cy - radius * Math.cos(angle);
+
+        return `${x},${y}`;
+    }).join(' ');
+};
+
 function Logo({ className }) {
-    const gridSize = 4;
+    const gridSize = 7;
     let initialGrid = [];
     for (let i = 0; i < gridSize; i++) {
         let row = [];
@@ -48,14 +58,18 @@ function Logo({ className }) {
     });
 
     return (
-        <svg fill="none" className={className} stroke="currentColor" viewBox={`0 0 ${gridSize} ${gridSize}`} xmlns="http://www.w3.org/2000/svg" >
-            {
-                grid.map((row, i) => (<React.Fragment key={i}>
-                    {row.map((cell, j) => (
-                        <rect key={j} x={j} y={i} width={1} height={1} fill={cell} strokeWidth={0}></rect>
-                    ))}
-                </React.Fragment>))
-            }
+        <svg fill="none" className={className} stroke="currentColor" viewBox={`0 0 ${gridSize - 3} ${gridSize - 3}`} xmlns="http://www.w3.org/2000/svg" >
+            {grid.map((row, i) => (<React.Fragment key={i}>
+                {row.map((cell, j) => (
+                    <polygon
+                        key={j}
+                        points={hexagonPoints(i * 0.750 + 0.1, (j + (i % 2 === 0 ? 0.5 : 0)) * 0.865 - 0.3, 0.5)}
+                        shapeRendering="geometricPrecision"
+                        strokeWidth={0}
+                        fill={cell} />
+                ))}
+
+            </React.Fragment>))}
         </svg>
     );
 }

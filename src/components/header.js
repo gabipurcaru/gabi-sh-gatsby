@@ -11,7 +11,7 @@ function Header() {
           to="/"
         >
           <span className="md:ml-3 text-2xl">
-            <Logo className="h-10 w-10 inline mr-4 rounded shadow-lg" />
+            <Logo className="h-10 w-10 inline mr-4 rounded shadow" />
             <span className="inline-block align-middle">Gabi Purcaru</span>
           </span>
         </Link>
