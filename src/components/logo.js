@@ -28,7 +28,6 @@ function Logo({ className }) {
         const interval = setInterval(() => {
             var i = parseInt(Math.random() * gridSize);
             var j = parseInt(Math.random() * gridSize);
-            console.log(grid);
             let newGrid = [];
             for (let ii = 0; ii < gridSize; ii++) {
                 let row = [];
