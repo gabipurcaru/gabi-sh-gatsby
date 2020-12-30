@@ -5,9 +5,11 @@ var randomColor = function () {
     return (
         "hsla(" +
         parseInt(Math.random() * 256) +
-        ", 80%, " +
-        parseInt(Math.random() * 70 + 20) +
-        "%, 1)"
+        ", " +
+        parseInt(Math.random() * 90 + 10) +
+        "%, " +
+        // parseInt(Math.random() * 80 + 20) +
+        "60%, 1)"
     );
 };
 
