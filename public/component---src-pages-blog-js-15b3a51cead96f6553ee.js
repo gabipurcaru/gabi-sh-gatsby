@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{vx99:function(e,t,n){"use strict";n.r(t);var a=n("q1tI"),l=n.n(a),c=n("Bl7J"),r=n("vrFN");t.default=function(){return l.a.createElement(c.a,null,l.a.createElement(r.a,{keywords:["gatsby","tailwind","react","tailwindcss"],title:"Contact"}),l.a.createElement("div",null,l.a.createElement("p",null,"todo")))}}}]);
+//# sourceMappingURL=component---src-pages-blog-js-15b3a51cead96f6553ee.js.map

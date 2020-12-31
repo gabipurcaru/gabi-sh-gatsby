@@ -12,12 +12,14 @@ module.exports = {
   plugins: [
     `gatsby-plugin-eslint`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-catch-links`,
+    `gatsby-plugin-offline`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-tailwind`,
-        short_name: `starter`,
-        start_url: `/`,
+        name: `Gabi Purcaru`,
+        short_name: `Gabi Purcaru`,
+        start_url: `/gabi-sh-gatsby/public/`,
         background_color: fullConfig.theme.colors.white,
         theme_color: fullConfig.theme.colors.green["300"],
         display: `minimal-ui`,
@@ -36,6 +38,18 @@ module.exports = {
         ],
       },
     },
-    `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/pages/blog`,
+        name: "blog"
+      }
+    },
+    {
+      resolve: "gatsby-transformer-remark",
+      options: {
+        plugins: ['gatsby-remark-prismjs'],
+      },
+    },
   ],
 };

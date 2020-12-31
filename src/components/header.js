@@ -37,7 +37,7 @@ function Header() {
             </svg>
             Contact
           </Link>
-          <a className="mr-6 text-gray-800 hover:text-black">
+          <Link to="/blog" className="mr-6 text-gray-800 hover:text-black">
             <svg
               className="w-5 h-5 inline md:mr-1"
               fill="none"
@@ -53,7 +53,7 @@ function Header() {
               />
             </svg>
             Blog
-          </a>
+          </Link>
           <a className="text-gray-800 hover:text-black">
             <svg
               className="w-5 h-5 inline md:mr-1"
