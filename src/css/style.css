@@ -2,4 +2,16 @@
 @tailwind base;
 @tailwind components;
 /*! purgecss end ignore */
+
+.blog-post-content h2 {
+  @apply text-2xl font-bold;
+}
+.blog-post-content p {
+  @apply mb-3;
+}
+
+.blog-post-content {
+  @apply max-w-screen-md;
+}
+
 @tailwind utilities;

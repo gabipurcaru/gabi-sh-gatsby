@@ -10,7 +10,6 @@ export default function BlogPost({
     data,
 }) {
     const { markdownRemark: post } = data;
-    console.log(data);
     return (
         <>
             <Helmet title={`Gabi Purcaru - ${post.frontmatter.title}`} />
@@ -20,7 +19,7 @@ export default function BlogPost({
                     title={`Gabi Purcaru - ${post.frontmatter.title}`}
                 />
                 <div>
-                    <h1 className="font-bold text-2xl mb-4">{post.frontmatter.title}</h1>
+                    <h1 className="text-3xl mb-4">{post.frontmatter.title}</h1>
                     <div
                         className="blog-post-content"
                         dangerouslySetInnerHTML={{ __html: post.html }}
