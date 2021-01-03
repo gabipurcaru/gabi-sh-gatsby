@@ -5,11 +5,12 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
+import Author from "../components/author";
 
 export default function BlogPost({
     data,
 }) {
-    const { markdownRemark: post } = data;
+    const { markdownRemark: post, imageSharp: face } = data;
     return (
         <>
             <Helmet title={`Gabi Purcaru - ${post.frontmatter.title}`} />
@@ -25,6 +26,10 @@ export default function BlogPost({
                         dangerouslySetInnerHTML={{ __html: post.html }}
                     />
                 </div>
+
+                <hr className="my-8" />
+
+                <Author face={face} />
             </Layout >
         </>
     )
@@ -44,4 +49,5 @@ export const pageQuery = graphql`
         title
       }
     }
+    ...AuthorFaceFragment
   }`;

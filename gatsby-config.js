@@ -14,6 +14,14 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-catch-links`,
     `gatsby-plugin-offline`,
+    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-transformer-sharp`,
+      options: {
+        // The option defaults to true
+        checkSupportedExtensions: false,
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -43,6 +51,13 @@ module.exports = {
       options: {
         path: `${__dirname}/src/pages/blog`,
         name: "blog"
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/images`,
+        name: "images"
       }
     },
     {
