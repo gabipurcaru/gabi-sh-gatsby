@@ -1,21 +1,21 @@
 {
-  "name": "gatsby-starter-tailwind",
-  "description": "Gatsby starter styled with Tailwind",
-  "version": "4.0.0",
-  "author": "Taylor Bryant <taylor@bryant.io>",
+  "name": "gabi-sh-tailwind",
+  "description": "Gabi's personal website",
+  "version": "1.0.0",
+  "author": "Gabi Purcaru <gabi@purcaru.com>",
   "dependencies": {
-    "gatsby": "2.27.3",
-    "gatsby-image": "^2.8.0",
-    "gatsby-plugin-catch-links": "^2.7.0",
+    "gatsby": "^2.31.1",
+    "gatsby-image": "^2.10.0",
+    "gatsby-plugin-catch-links": "^2.9.0",
     "gatsby-plugin-manifest": "2.8.0",
     "gatsby-plugin-offline": "3.5.0",
     "gatsby-plugin-postcss": "2.3.13",
     "gatsby-plugin-react-helmet": "3.5.0",
-    "gatsby-plugin-sharp": "^2.11.2",
-    "gatsby-remark-prismjs": "^3.10.0",
-    "gatsby-source-filesystem": "^2.8.1",
-    "gatsby-transformer-remark": "^2.13.1",
-    "gatsby-transformer-sharp": "^2.9.0",
+    "gatsby-plugin-sharp": "^2.13.1",
+    "gatsby-remark-prismjs": "^3.12.0",
+    "gatsby-source-filesystem": "^2.10.0",
+    "gatsby-transformer-remark": "^2.15.0",
+    "gatsby-transformer-sharp": "^2.11.0",
     "prismjs": "^1.23.0",
     "prop-types": "15.7.2",
     "react": "16.14.0",
@@ -24,12 +24,8 @@
     "react-icons": "^4.1.0"
   },
   "keywords": [
-    "gatsby",
-    "tailwind",
-    "tailwindcss",
-    "purgecss"
   ],
-  "license": "MIT",
+  "license": "",
   "scripts": {
     "analyze:lint": "eslint --ext .jsx --ext .js .",
     "analyze:prettier": "prettier --list-different \"**/*.{css,js,jsx,json,md}\"",
@@ -61,9 +57,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/taylorbryant/gatsby-starter-tailwind"
-  },
-  "bugs": {
-    "url": "https://github.com/taylorbryant/gatsby-starter-tailwind/issues"
+    "url": "https://github.com/gabipurcaru/gabi-sh-gatsby"
   }
 }
