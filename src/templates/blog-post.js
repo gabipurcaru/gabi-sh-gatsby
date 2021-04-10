@@ -49,5 +49,4 @@ export const pageQuery = graphql`
         title
       }
     }
-    ...AuthorFaceFragment
   }`;
