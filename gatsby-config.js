@@ -13,10 +13,17 @@ module.exports = {
     `gatsby-plugin-eslint`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-catch-links`,
-    `gatsby-plugin-offline`,
     `gatsby-plugin-image`,
     `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-offline`,
+      options: {
+        workboxConfig: {
+          globPatterns: ['*.html']
+        }
+      }
+    },
     {
       resolve: `gatsby-transformer-sharp`,
       options: {
