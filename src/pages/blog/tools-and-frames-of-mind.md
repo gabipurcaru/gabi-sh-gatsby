@@ -1,10 +1,9 @@
 ---
-path: "/tools-and-frames-of-mind"
+path: /tools-and-frames-of-mind
 date: 2020-06-12
-title: "Tools and Frames of Mind"
+title: Tools and Frames of Mind
 published: true
 ---
-
 I'm lucky enough to spend a lot of time close to people way smarter than me, so naturally I try to learn as much as possible from them.
 
 There are two main things I try to get out of these relationships:
@@ -31,5 +30,5 @@ These are the topics that take years to unfold, and the answer is anything but a
 const a = () =>
   setTimeout(() => {
     console.log("test");
-  }, 100);
+  }, 400);
 ```
