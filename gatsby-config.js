@@ -5,9 +5,9 @@ const fullConfig = resolveConfig(tailwindConfig);
 
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Tailwind`,
-    description: `Gatsby starter styled with Tailwind`,
-    author: `@taylorbryant`,
+    title: `Gabi Purcaru - Software Engineer`,
+    description: `This is my personal website.`,
+    author: `@gabipurcaru`,
   },
   plugins: [
     `gatsby-plugin-eslint`,
@@ -36,7 +36,7 @@ module.exports = {
       options: {
         name: `Gabi Purcaru`,
         short_name: `Gabi Purcaru`,
-        start_url: `/gabi-sh-gatsby/public/`,
+        start_url: `/`,
         background_color: fullConfig.theme.colors.white,
         theme_color: fullConfig.theme.colors.green["300"],
         display: `minimal-ui`,
