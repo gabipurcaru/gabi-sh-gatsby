@@ -15,6 +15,7 @@ module.exports = {
     `gatsby-plugin-catch-links`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-image`,
+    `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-transformer-sharp`,
